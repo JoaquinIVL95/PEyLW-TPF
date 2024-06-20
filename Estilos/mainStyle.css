@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    
+    min-height: 100vh;
+    background-color:rgb(223, 217, 217) ;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}   
+
+.msj-inicio{
+    display: flex;
+    justify-content: flex-start;
+    margin: 40px;
+
+}
+
+
+
+.carrusel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 300px; */
+    
+    margin: 40px;
+    padding: 7px;
+    
+    
+
+}
+
+.carrusel-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+    background-color: grey;
+    border-radius: 10px;
+    position: absolute;
+}
+.img-carru{
+    position: relative;
+    width: 100%;
+}
