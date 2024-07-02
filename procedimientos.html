@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Estilos/mainStyle.css">
+    <link rel="stylesheet" href="Estilos/navBar.css">
+    <link rel="stylesheet" href="Estilos/procedimientos.css">
+    <link rel="stylesheet" href="Estilos/footer.css">
+    <link rel="stylesheet" href="Estilos/footer.css">
+    <link rel="stylesheet" href="Estilos/btn-inicio.css">
+    <link rel="icon" type="image/x-icon" href="/PEyLW-TPF/Imagenes/Iso logo nuevo final.png">
+
+    
+    <title>GRUPO DAHIR INTERNO</title>
+</head>
+<body>
+    <button class="up-button" id="btnInicio">
+        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"><path fill="#410f56" d="M12 22A10 10 0 0 1 2 12A10 10 0 0 1 12 2a10 10 0 0 1 10 10a10 10 0 0 1-10 10m5-8l-5-5l-5 5z"/></svg>
+      </button>
+    <header>
+        <nav class="navbar">
+            <div class="grupodahir">
+                <img class="imgLogo" src="Imagenes/logo_nuevo_final.png" alt="Logo de la empresa">
+                <!-- <p>GRUPO DAHIR</p> -->
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="contactos.html">CONTACTOS</a></li>
+                    <li><a href="index.html">NOVEDADES</a></li>
+                    <li><a href="empresa.html">EMPRESA</a></li>
+                    <li><a href="procedimientos.html">PROCEDIMIENTOS</a></li>
+                    <li><a href="/PEyLW-TPF/modulos.html">MODULOS</a></li>
+                    <li><a href="/PEyLW-TPF/herramientas.html">HERRAMIENTAS</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="msj-inicio">
+        <h1>PROCEDIMIENTOS </h1>
+    </div>
+
+    <div class="container">
+        <div class="seccion">
+            <div class="nombre-pro">
+                <h3>PARA UN CIERRE DE VENTA Y ALQUILER</h3>
+
+            </div>
+            <button class="btn-desplegable" onclick="desplegarInfo(0)">
+                <span class="flecha">&#9658;</span>
+            </button>
+            <div class="info-content">
+                <br>
+                <h3>Objetivo: Finalizar exitosamente la transacción de venta o alquiler de una propiedad.</h3>
+                <br>
+                <p><strong>Paso 1: Confirmación de Condiciones</strong></p>
+                <br>
+                <ul class="p-procedimiento">
+                    <li class="li-procedimiento">&#9658; Revisar y confirmar las condiciones acordadas entre las partes (precio, términos de pago, fechas de ocupación, etc.).</li>
+                </ul>
+
+                <br>
+                <p><strong>Paso 2: Preparación de Documentación</strong></p>
+                <br>
+                <ul class="p-procedimiento">
+                    <li class="li-procedimiento">&#9658; Preparar el contrato de compra-venta o de arrendamiento según las condiciones acordadas.</li>
+                    <li class="li-procedimiento">&#9658; Verificar que todos los documentos estén completos y correctamente redactados.</li>
+                </ul>
+                <br>
+                <p><strong>Paso 3: Firma de Contrato</strong></p>
+                <br>
+                <ul class="p-procedimiento">
+                    <li class="li-procedimiento">&#9658; Coordinar la firma del contrato entre las partes involucradas (vendedor/comprador o arrendador/arrendatario).</li>
+                    <li class="li-procedimiento">&#9658; Asegurarse de que todos los términos estén entendidos y aceptados por ambas partes antes de la firma.</li>
+                </ul>
+                <br>
+                <p><strong>Paso 4: Gestión de Pagos y Depósitos</strong></p>
+                <br>
+                <ul class="p-procedimiento">
+                    <li class="li-procedimiento">&#9658; Facilitar el proceso de pago inicial, depósitos y pagos finales según lo acordado en el contrato.</li>
+                    <li class="li-procedimiento">&#9658; Confirmar la recepción de pagos y depósitos necesarios para asegurar la transacción.</li>
+                </ul>
+                <br>
+                <p><strong>Paso 5: Entrega de Propiedad</strong></p>
+                <br>
+                <ul class="p-procedimiento">
+                    <li class="li-procedimiento">&#9658; Coordinar la entrega física de la propiedad al comprador o arrendatario.</li>
+                    <li class="li-procedimiento">&#9658; Realizar una inspección final para asegurarse de que la propiedad esté en condiciones adecuadas según lo acordado.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="seccion">
+            <div class="nombre-pro">
+                <h3> PARA CAPTAR UNA PROPIEDAD</h3>
+            </div>
+            <button class="btn-desplegable" onclick="desplegarInfo(1)">
+                <span class="flecha">&#9658;</span>
+            </button>
+            <div class="info-content" id="info-1">
+                <br>
+                <h3>Objetivo: Atraer nuevas propiedades para su inclusión en el inventario de la agencia inmobiliaria.</h3>
+                <br>
+                <p><strong>Paso 1: Contacto con el Propietario</strong></p>
+                <br>
+                <ul class="p-procedimiento">
+                    <li class="li-procedimiento">&#9658; Establecer contacto con el propietario para ofrecer los servicios de la agencia.</li>
+                    <li class="li-procedimiento">&#9658; Explicar los beneficios de trabajar con la agencia para la venta o alquiler de su propiedad.</li>
+                </ul>
+                <br>
+                <p><strong>Paso 2: Evaluación de la Propiedad</strong></p>
+                <br>
+                <ul class="p-procedimiento">
+                    <li class="li-procedimiento">&#9658; Visitar la propiedad y realizar una evaluación inicial.</li>
+                    <li class="li-procedimiento">&#9658; Tomar fotografías y recopilar información relevante para crear un perfil detallado.</li>
+                </ul>
+                <br>
+                <p><strong>Paso 3: Propuesta de Servicios</strong></p>
+                <br>
+                <ul class="p-procedimiento">
+                    <li class="li-procedimiento">&#9658; Presentar una propuesta detallada de los servicios ofrecidos por la agencia, incluyendo estrategias de marketing y promoción.</li>
+                    <li class="li-procedimiento">&#9658; Explicar los términos de exclusividad (si aplica) y los honorarios de la agencia.</li>
+                </ul>
+                <br>
+                <p><strong>Paso 4: Acuerdo y Documentación</strong></p>
+                <br>
+                <ul class="p-procedimiento">
+                    <li class="li-procedimiento">&#9658; Negociar y llegar a un acuerdo con el propietario sobre los términos y condiciones.</li>
+                    <li class="li-procedimiento">&#9658; Preparar la documentación necesaria para formalizar la relación con el propietario.</li>
+                </ul>
+                <br>
+                <p><strong>Paso 5: Inclusión en el Inventario</strong></p>
+                <br>
+                <ul class="p-procedimiento">
+                    <li class="li-procedimiento">&#9658; Agregar la propiedad al inventario de la agencia y comenzar con las actividades de promoción y venta/alquiler.</li>
+                    <li class="li-procedimiento">&#9658; Informar al propietario sobre las acciones realizadas y el progreso de la gestión.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="seccion">
+            <div class="nombre-pro">
+                <h3>PARA ADMINISTRAR ALQUILERES TEMPORALES</h3>
+            </div>
+            <button class="btn-desplegable" onclick="desplegarInfo(2)">
+                <span class="flecha">&#9658;</span>
+            </button>
+            <div class="info-content" id="info-2">
+                <br>
+                <h3>Objetivo: Atraer propietarios interesados en alquilar sus propiedades de forma temporal.</h3>
+                <br>
+                <p><strong>Paso 1: Identificación del Cliente Potencial</strong></p>
+                <br>
+                <ul class="p-procedimiento">
+                    <li class="li-procedimiento">&#9658; Identificar potenciales propietarios interesados en alquilar temporalmente sus propiedades.</li>
+                    <li class="li-procedimiento">&#9658; Utilizar bases de datos, contactos previos y campañas de marketing dirigidas.</li>
+                </ul>
+                <br>
+                <p><strong>Paso 2: Presentación de Servicios</strong></p>
+                <br>
+                <ul class="p-procedimiento">
+                    <li class="li-procedimiento">&#9658; Contactar al propietario y ofrecer los servicios de gestión de alquiler temporal.</li>
+                    <li class="li-procedimiento">&#9658; Explicar los beneficios de trabajar con la agencia para maximizar la ocupación y rentabilidad de la propiedad.</li>
+                </ul>
+                <br>
+                <p><strong>Paso 3: Evaluación y Propuesta</strong></p>
+                <br>
+                <ul class="p-procedimiento">
+                    <li class="li-procedimiento">&#9658; Realizar una evaluación inicial de la propiedad y determinar el potencial de alquiler temporal.</li>
+                    <li class="li-procedimiento">&#9658; Presentar una propuesta detallada que incluya la estrategia de marketing, gestión de reservas y servicios adicionales ofrecidos.</li>
+                </ul>
+                <br>
+                <p><strong>Paso 4: Acuerdo y Documentación</strong></p>
+                <br>
+                <ul class="p-procedimiento">
+                    <li class="li-procedimiento">&#9658; Negociar y llegar a un acuerdo con el propietario sobre los términos del contrato de gestión de alquiler temporal.</li>
+                    <li class="li-procedimiento">&#9658; Preparar y firmar la documentación necesaria para formalizar la relación.</li>
+                </ul>
+                <br>
+                <p><strong>Paso 5: Promoción y Gestión</strong></p>
+                <br>
+                <ul class="p-procedimiento">
+                    <li class="li-procedimiento">&#9658; Incluir la propiedad en el inventario de alquiler temporal de la agencia.</li>
+                    <li class="li-procedimiento">&#9658; Implementar la estrategia de marketing acordada y gestionar las reservas y ocupación de la propiedad.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="seccion">
+            <div class="nombre-pro">
+                <h3>PARA UNA TASACION OFICIAL</h3>
+            </div>
+            <button class="btn-desplegable" onclick="desplegarInfo(3)">
+                <span class="flecha">&#9658;</span>
+            </button>
+            <div class="info-content" id="info-3">
+                <br>
+                <h3>Objetivo: Determinar el valor comercial de una propiedad para fines de venta, alquiler o inversión.</h3>
+                <br>
+                <p><strong>Paso 1: Inspección de la Propiedad</strong></p>
+                <br>
+                <ul class="p-procedimiento">
+                    <li class="li-procedimiento">&#9658; Programar una visita a la propiedad junto con el propietario o representante.</li>
+                    <li class="li-procedimiento">&#9658; Observar y tomar nota de las características físicas y condiciones actuales de la propiedad.</li>
+                </ul>
+                <br>
+                <p><strong>Paso 2: Análisis de Mercado</strong></p>
+                <br>
+                <ul class="p-procedimiento">
+                    <li class="li-procedimiento">&#9658; Realizar un análisis del mercado inmobiliario local y comparar propiedades similares recientemente vendidas o alquiladas.</li>
+                    <li class="li-procedimiento">&#9658; Considerar factores como ubicación, tamaño, estado de la propiedad y tendencias de mercado.</li>
+                </ul>
+                <br>
+                <p><strong>Paso 3: Evaluación Económica</strong></p>
+                <br>
+                <ul class="p-procedimiento">
+                    <li class="li-procedimiento">&#9658; Utilizar métodos de evaluación reconocidos para determinar el valor comercial de la propiedad.</li>
+                    <li class="li-procedimiento">&#9658; Considerar aspectos financieros y económicos que puedan afectar el valor de la propiedad.</li>
+                </ul>
+                <br>
+                <p><strong>Paso 4: Informe de Tasación</strong></p>
+                <br>
+                <ul class="p-procedimiento">
+                    <li class="li-procedimiento">&#9658; Preparar un informe detallado que incluya la evaluación física, análisis de mercado y valoración económica.</li>
+                    <li class="li-procedimiento">&#9658; Presentar el informe al propietario o cliente junto con recomendaciones y análisis comparativo.</li>
+                </ul>
+                <br>
+                <p><strong>Paso 5: Seguimiento y Asesoramiento</strong></p>
+                <br>
+                <ul class="p-procedimiento">
+                    <li class="li-procedimiento">&#9658; Seguir con el propietario o cliente para responder preguntas y proporcionar asesoramiento adicional si es necesario.</li>
+                    <li class="li-procedimiento">&#9658; Asistir durante el proceso de negociación basado en la tasación realizada.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="seccion">
+            <div class="nombre-pro">
+                <h3>PARA GESTIONES VARIAS</h3>
+            </div>
+            <button class="btn-desplegable" onclick="desplegarInfo(4)">
+                <span class="flecha">&#9658;</span>
+            </button>
+            <div class="info-content" id="info-3">
+                <br>
+                <h3>Objetivo: Implementar un proceso efectivo para avanzar en diversas gestiones inmobiliarias.</h3>
+                <br>
+                <p><strong>Paso 1: Planificación y Organización</strong></p>
+                <br>
+                <ul class="p-procedimiento">
+                    <li class="li-procedimiento">&#9658; Establecer metas claras y objetivos específicos para cada gestión.</li>
+                    <li class="li-procedimiento">&#9658; Asignar recursos necesarios y definir responsabilidades.</li>
+                </ul>
+                <br>
+                <p><strong>Paso 2: Ejecución y Seguimiento</strong></p>
+                <br>
+                <ul class="p-procedimiento">
+                    <li class="li-procedimiento">&#9658; Implementar las acciones planificadas de manera sistemática y eficiente.</li>
+                    <li class="li-procedimiento">&#9658; Realizar un seguimiento regular para asegurarse de que cada etapa avance según lo previsto.</li>
+                </ul>
+                <br>
+                <p><strong>Paso 3: Comunicación Efectiva</strong></p>
+                <br>
+                <ul class="p-procedimiento">
+                    <li class="li-procedimiento">&#9658; Mantener una comunicación clara y abierta con todas las partes involucradas en cada gestión.</li>
+                    <li class="li-procedimiento">&#9658; Asegurarse de que todas las actualizaciones y cambios sean comunicados oportunamente.</li>
+                </ul>
+                <br>
+                <p><strong>Paso 4: Resolución de Problemas</strong></p>
+                <br>
+                <ul class="p-procedimiento">
+                    <li class="li-procedimiento">&#9658; Abordar cualquier problema o desafío que surja durante el proceso de gestión.</li>
+                    <li class="li-procedimiento">&#9658; Buscar soluciones efectivas y tomar medidas correctivas según sea necesario.</li>
+                </ul>
+                <br>
+                <p><strong>Paso 5: Evaluación y Mejora Continua</strong></p>
+                <br>
+                <ul class="p-procedimiento">
+                    <li class="li-procedimiento">&#9658; Evaluar los resultados obtenidos al completar cada gestión.</li>
+                    <li class="li-procedimiento">&#9658; Identificar áreas de mejora y oportunidades para optimizar procesos futuros.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-icons">
+            <div class="footer-icon">
+                <a href=""><img class="ftr-icons" src="/PEyLW-TPF/Imagenes/ICONOS FOOTER PAGINA/linkedin1.png" alt=""></a>
+                <!-- <p><a class="f-text" href="">GRUPO  DAHIR LINKEDIN</a></p> -->
+            </div>
+            <div class="footer-icon">
+                <a href="https://www.facebook.com/dahir.inmobiliaria/"><img class="ftr-icons" src="/PEyLW-TPF/Imagenes/ICONOS FOOTER PAGINA/facebook2.png" alt=""></a>
+                <!-- <p><a class="f-text" href="">FACEBOOK OFICIAL</a></p> -->
+            </div>
+            <div class="footer-icon">
+                <a href="https://www.instagram.com/grupodahir/"><img class="ftr-icons" src="/PEyLW-TPF/Imagenes/ICONOS FOOTER PAGINA/ig3.png" alt=""></a>
+                <!-- <p><a class="f-text" href="">IG GRUPO DAHIR</a></p> -->
+            </div>
+            <div class="footer-icon">
+                <a href="https://www.youtube.com/channel/UCTcshjLQGtdgFdX1A4JqK6A"><img class="ftr-icons" src="/PEyLW-TPF/Imagenes/ICONOS FOOTER PAGINA/youtube4.png" alt=""></a>
+                <!-- <p><a class="f-text" href="">GRUPO  DAHIR YOUTUBE</a></p> -->
+            </div>
+        </div>
+    
+        <div class="footer-logo">
+            <img class="logo-nuevo" src="Imagenes/logo_nuevo_final.png" alt="">
+        </div>
+    
+        <div class="footer-copyright">
+            <p class="f-text">Copyright © 2024 GRUPO DAHIR. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script src="/PEyLW-TPF/funciones/desplegar.js"></script>
+    <script src="/PEyLW-TPF/funciones/btn-inicio.js"></script>
+</body>
+</html>

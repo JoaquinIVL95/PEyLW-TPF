@@ -1,0 +1,58 @@
+/* styles.css */
+/* .container {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+} */
+
+.container {
+    display: block;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    max-width: 700px;
+}
+
+.seccion {
+    margin-bottom: 10px;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.btn-desplegable {
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: background-color 0.3s ease;
+}
+
+.btn-desplegable:hover {
+    background-color: #0056b3;
+}
+
+.flecha {
+    transition: transform 0.3s ease;
+}
+
+.info-content {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+}

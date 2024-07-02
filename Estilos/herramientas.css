@@ -1,0 +1,56 @@
+
+
+.cotizador {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cotizador h1 {
+    margin-bottom: 20px;
+}
+
+.cotizador form {
+    display: flex;
+    flex-direction: column;
+}
+
+.cotizador label {
+    margin-bottom: 5px;
+}
+
+.cotizador input,
+.cotizador select {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.cotizador button {
+    padding: 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.cotizador button:hover {
+    background-color: #218838;
+}
+
+#resultado {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#resultadoTasacion {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}

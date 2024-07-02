@@ -1,0 +1,69 @@
+.container {
+    display: block;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    max-width: 700px;
+}
+
+.nombre-pro {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.seccion {
+    margin-bottom: 10px;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.btn-desplegable {
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 16px;
+    /* background-color: grey;
+    color: white; */
+    border: none;
+    cursor: pointer;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.btn-desplegable:hover {
+    background-color: rgb(65, 65, 65);
+}
+
+.flecha {
+    margin-left: 10px; 
+    transition: transform 0.3s ease;
+}
+
+.info-content {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+    margin-bottom: 10px ;
+}
+
+.p-procedimiento{
+    margin-left: 12px;
+    padding: 10px;
+}
+
+.li-procedimiento{
+    color: black;
+    margin-left: 16px;
+    font-size: 14px;
+    margin-bottom: 10px
+}

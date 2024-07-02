@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,17 +9,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="Estilos/mainStyle.css">
     <link rel="stylesheet" href="Estilos/navBar.css">
-    <link rel="stylesheet" href="Estilos/carrusel.css">
+    <link rel="stylesheet" href="Estilos/contacto.css">
     <link rel="stylesheet" href="Estilos/footer.css">
     <link rel="stylesheet" href="Estilos/btn-inicio.css">
+
     <link rel="icon" type="image/x-icon" href="/PEyLW-TPF/Imagenes/Iso logo nuevo final.png">
 
     <title>GRUPO DAHIR INTERNO</title>
 </head>
 <body>
+
     <button class="up-button" id="btnInicio">
         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"><path fill="#410f56" d="M12 22A10 10 0 0 1 2 12A10 10 0 0 1 12 2a10 10 0 0 1 10 10a10 10 0 0 1-10 10m5-8l-5-5l-5 5z"/></svg>
       </button>
+
     <header>
         <nav class="navbar">
             <div class="grupodahir">
@@ -33,48 +37,79 @@
                     <li><a href="procedimientos.html">PROCEDIMIENTOS</a></li>
                     <li><a href="/PEyLW-TPF/modulos.html">MODULOS</a></li>
                     <li><a href="/PEyLW-TPF/herramientas.html">HERRAMIENTAS</a></li>
-
                 </ul>
             </div>
         </nav>
     </header>
 
     <div class="msj-inicio">
-        <h1>BIENVENIDOS</h1>
+        <h1>CONTACTO</h1>
     </div>
 
-    <!-- Carrusel Novedades -->
-    <section class="carrusel">
-        <div class="carrusel-container" id="carrusel">
-            <div class="carrusel-item">
-                <div class="frente-img"></div>
-                <img class="img-carru" src="/PEyLW-TPF/Imagenes/Imagenes carrusel/carrusel conso.png" alt="Novedad 1">
-                <div class="info-carru">
-                    <h3 class="titulo-car">Inauguración de un Nuevo Desarrollo Residencial en el Centro de la Ciudad</h3>
-                    <p class="descripcion">Estamos emocionados de anunciar la inauguración de nuestro último desarrollo residencial en el corazón del centro de la ciudad. Con una arquitectura moderna y amenidades de lujo, este proyecto representa un hito significativo en nuestro compromiso de ofrecer espacios habitacionales excepcionales que combinan estilo y comodidad.</p>
+  
+    <section>
+        <div class="contenedor">
+            <div class="form-contenedor">
+    
+            <h2 class="titulo-form">Formulario para consultas y solicitudes</h2>
+    
+            <form id="formularioSolicitud" action="enviarMsj" method="post">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required><br>
+    
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email"><br>
+    
+                <label for="sector">A que sector es dirigida</label>
+                <select type="text" name="sector" id="sector" required>
+                    <option value="">Seleccione el sector</option>
+                    <option value="compras">Compras</option>
+                    <option value="marketing">Marketing</option>
+                    <option value="gerencia">Gerencia</option>
+                    <option value="tesoreria">Tesoreria</option>
+                    <option value="martilleros">Martilleros</option>
+                </select>
+                
+    
+    
+                <label for="mensaje">Deje su solicitud: </label>
+                <textarea type="text" id="mensaje" oninput="ajustarLabel(this)" name="mensaje" required></textarea><br>
+                
+                <input type="submit" onclick="enviar()" value="Enviar">
+            </form>
+            <!-- <a id="email-receptor" href="mailto:joaquinivl95@gmail.com"></a> -->
 
-                </div>
-            </div>
-            <div class="carrusel-item">
-                <div class="frente-img"></div>
-                <img class="img-carru" src="/PEyLW-TPF/Imagenes/Imagenes carrusel/carrusel const.png" alt="Novedad 2">
-                <div class="info-carru">
-                    <h3 class="titulo-car">Expansión de la Cartera de Propiedades Exclusivas</h3>
-                    <p class="descripcion">Nos complace informarles que hemos incorporado una serie de nuevas propiedades exclusivas a nuestra cartera. Desde elegantes apartamentos en zonas urbanas hasta lujosas residencias en entornos naturales, cada una de estas propiedades ha sido seleccionada cuidadosamente para ofrecer lo mejor en términos de ubicación, calidad y diseño arquitectónico.</p>
+            <script>
 
-                </div>
-            </div>
-            <div class="carrusel-item">
-                <div class="frente-img"></div>
-                <img class="img-carru" src="/PEyLW-TPF/Imagenes/Imagenes carrusel/carrusel desa.png" alt="Novedad 3">
-                <div class="info-carru">
+                document.addEventListener('DOMContentLoaded', function() {
+                        // Captura el formulario por su ID
+                        var form = document.getElementById('formularioSolicitud');
                     
-                    <h3 class="titulo-car">Introducción de un Programa de Sostenibilidad Ambiental</h3>
-                    <p class="descripcion">Como parte de nuestro compromiso con la sostenibilidad ambiental, hemos lanzado un nuevo programa que integra prácticas eco-amigables en nuestras operaciones. Desde el uso de tecnologías energéticamente eficientes en nuestros desarrollos hasta la promoción de materiales de construcción sostenibles, este programa refleja nuestro compromiso continuo de minimizar nuestro impacto ambiental y contribuir positivamente a las comunidades que servimos.</p>
-                </div>
+                        // Agrega un controlador de eventos para el evento 'submit'
+                        form.addEventListener('submit', function(event) {
+                            // Evita que el formulario se envíe
+                            event.preventDefault();
+                        });
+                        });
+
+                
+                function ajustarLabel(textarea) {
+                textarea.style.height = 'auto';
+                label.style.height = textarea.scrollHeight + 'px';
+            }
+
+            
+            
+            </script>
+
             </div>
+
         </div>
+    
+    
     </section>
+
+
 
 <footer class="footer">
     <div class="footer-icons">
@@ -105,20 +140,7 @@
     </div>
 </footer>
 
-<script>
-    const carrusel = document.getElementById('carrusel');
-    let currentIndex = 0;
-
-    function showNextSlide() {
-        const items = carrusel.children;
-        currentIndex = (currentIndex + 1) % items.length;
-        carrusel.style.transform = `translateX(-${currentIndex * 100}%)`;
-    }
-
-    setInterval(showNextSlide, 8000);
-</script>
-
-    <!-- <script src="script.js"></script> -->
     <script src="/PEyLW-TPF/funciones/btn-inicio.js"></script>
+    <script src="/PEyLW-TPF/funciones/formulario.js"></script>
 </body>
 </html>

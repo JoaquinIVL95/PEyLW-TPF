@@ -1,0 +1,12 @@
+.up-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    /* border-radius: 5px; */
+    display: none; /* Se oculta inicialmente y se mostrará después de desplazarse hacia abajo */
+    z-index: 999;
+  }

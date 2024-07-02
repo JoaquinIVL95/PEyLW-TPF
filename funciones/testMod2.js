@@ -17,9 +17,6 @@ function enviarTest(){
         let respuesta = formTest['q' + i].value
         if(respuesta === respuestasCorrectas['q' + i]){
             puntaje++;
-            
-        }else if(respuesta !== respuestasCorrectas['q' + i]){
-            
         }
     }
 
@@ -28,6 +25,3 @@ function enviarTest(){
     mostrarPuntaje.textContent = `Has acertado ${puntaje} de ${totalPreguntas} preguntas.`
     resultado.style.display='block'; 
 }
-
-
-
